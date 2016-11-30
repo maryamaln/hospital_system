@@ -7,6 +7,7 @@ class Doctor < ApplicationRecord
 
 	validates_presence_of :name
 	validates_presence_of :speciality
+	
 	validates :name, length: { minimum: 2 }
 	validates :speciality, length: { minimum: 2 }
 	
